@@ -1,86 +1,461 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>شريط التنقل</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
-    <style>
-        .nav-button {
-            background-color: #5f35ef;
-            color: white;
-            border-radius: 25px;
-            padding: 6px 20px;
-            font-weight: bold;
-        }
-        
-        .lang-btn {
-            background-color: #e0d6ff;
-            color: #5f35ef;
-            border-radius: 12px;
-            padding: 4px 12px;
-            font-weight: bold;
-            border: none;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/favicon.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>أكاديمية طويق</title>
 </head>
 
-<body>
+<body dir="rtl">
 
-    <nav class="navbar navbar-expand-lg bg-white border-bottom shadow-sm px-4 py-2">
-        <div class="container-fluid">
-            <!-- الشعار -->
-            <div class="d-flex align-items-center">
-                <img src="./img/logo-h.png" alt="شعار" style="height: 32px;" class="ms-2">
+    <!-- Start Top NavBar -->
 
-            </div>
+    <div class="topNav">
+        
 
-            <!-- زر القائمة في الجوال -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-            <!-- عناصر التنقل -->
-            <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
-                <ul class="navbar-nav mb-2 mb-lg-0 gap-lg-3 align-items-lg-center">
-                    <li class="nav-item d-lg-none my-2">
-                        <button class="nav-button w-100">تسجيل الدخول</button>
-                    </li>
-                    <li class="nav-item">
-                        <button class="lang-btn">En</button>
-                    </li>
-                    <li class="nav-item d-none d-lg-inline">|</li>
-                    <li class="nav-item"><a class="nav-link" href="#">الاعتمادات</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">الشراكات</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">مركز الاختبارات</a></li>
-
-                    <!-- قائمة منسدلة -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-            الأكاديميات التابعة
-          </a>
-                        <ul class="dropdown-menu text-end">
-                            <li><a class="dropdown-item" href="#">أكاديمية الأمن السيبراني</a></li>
-                            <li><a class="dropdown-item" href="#">أكاديمية الذكاء الاصطناعي</a></li>
-                            <li><a class="dropdown-item" href="#">أكاديمية البرمجة</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item"><a class="nav-link" href="#">حول الأكاديمية</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-button px-3" href="#">الرئيسية</a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- تسجيل الدخول (للكبار فقط، يخفي في الجوال) -->
-            <div class="d-none d-lg-block">
-                <button class="nav-button">تسجيل الدخول</button>
-            </div>
+        <img src="./img/logo-h.png" alt="اكاديمية طويق" />
+        <div class="auth-buttons">
+            <button class="language"> <a href="#"> EN </a></button>
+            <button class="signin"><a href="#">تسجيل الدخول</a></button>
         </div>
-    </nav>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+    </div>
+    <!-- End Top NavBar -->
+
+    <!-- Start  NavBar -->
+    <nav class="menu">
+        <ul class="bg-list">
+            <li><a href="#">الرئيسية</a></li>
+            <li><a href="#">حول الأكاديمية</a></li>
+            <li><a href="#"> الأكاديميات التابعة</a></li>
+            <li><a href="#"> مركز الإختبارات</a> </li>
+            <li><a href="#"> الشراكات</a></li>
+            <li><a href="#"> الإعتمادات</a></li>
+
+
+        </ul>
+
+    </nav>
+    <!-- End  NavBar -->
+
+
+    <!-- Start  Header -->
+
+    <header>
+
+        <div class="container">
+            <!-- Main Content -->
+            <div class="main-content">
+                        <div class="post">
+                            <div class="post-content">
+                                <h2> تعلم تقنيات المستقبل في مكــــانٍ واحــــــد </h2>
+                                
+                                    <div class="start-posts">
+                                        <p class="text">
+                                            معسكرات وبرامج احترافية بالشراكة مع كبرى الجهات العالمية؛ لتطوير مهاراتك في مجالات التقنيات الحديثة، بمنهجيّة تعلُّم قائمة على التطبيقات العملية، ضمن بيئة تعليمية محفزة وتنافسية. </p>
+                                            <button class="sign-start"><a href="#"> سجل الآن</a></button>
+                                    </div>
+                            </div>
+
+                        
+                            <div class="img-mounten">
+                                  <img src="./img/mounten.png" alt="جبل طويق" />
+                            </div>
+                        </div>
+
+                    </div>
+
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <div class="card-1">
+                        <div class="num-posts">
+                            <p>
+                                عدد المسجلين في المعسكرات والبرامج حتى الآن
+                            </p>
+                            <div class="img-job-posts">
+                                <img src="./img/performance.png" alt="job" />
+                            </div>
+                        </div>
+
+                        <h2> 1,716,670 </h2>
+
+                    </div>
+
+                    <div class="card-2">
+                        <div class="job-posts">
+                            <h3> نسبة توظيف خريجي المعسكرات</h3>
+                            <div class="img-job-posts">
+                                <img src="./img/job.png" alt="job" />
+                            </div>
+                        </div>   
+                        <div class="percent-job">
+                            <h2>80%</h2>
+                            
+                        </div> 
+                        
+                    </div>
+
+                    <div class="card-5">
+                        <div class="holberton-posts">
+                            <h3>هولبيرتون المسار التأسيسي </h3>
+                            <button class="sign-holberton"><a href="#"> سجل الآن</a></button>
+                        </div>
+                        <div class="img-holberton">
+                        <img src="./img/holberton.png" alt="holberton" />
+                        </div>
+                    </div>
+
+                    <div class="card-4">
+                        <div class="slider">
+                            <div class="slide-track">
+                            
+                                    <img src="./img/microsoft.png" alt="microsoft" />
+                                    <img src="./img/aws.png" alt="aws" />
+                                    <img src="./img/alibaba.png" alt="alibaba" />
+                                    <img src="./img/apple.png" alt="apple" width="10%"/>
+                                    <img src="./img/certn.png" alt="certnexus" />
+                                    <img src="./img/comptia.png" alt="comptia" />
+                                    <img src="./img/meta.png" alt="meta" />
+                                    <img src="./img/ibm.png" alt="ibm" />
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+             </div>
+        </div>
+      
+
+    </header>
+
+    <!-- End  Header -->
+
+
+     <!-- Start  main -->
+
+     <section class="main-type">
+        <div class="container-main">
+            
+          <div class="content-type-1">
+         
+                    <div class="type-content-1">
+                        <h2> المعسكرات </h2>
+                        
+                    </div>
+                            <div class="type-posts-1">
+                                <p class="text-type-1"> معسكرات منتهية بالتوظيف للمتميزين، مبنيّة على احتياجات سوق العمل، تقام لمدة 1-9 أشهر بشهادات احترافية في العديد من المجالات التقنية.</p>
+                            </div>
+                    
+
+                    <div class="img-type-1">
+                          <button class="type-1"><a href="#">  المزيد</a></button>
+                    </div>
+            </div>
+            <div class="content-type-2">
+
+                <div class="type-content-1">
+                    <h2> البرامج </h2>
+                    
+                </div>
+                        <div class="type-posts-1">
+                            <p class="text-type-1"> برامج احترافية لمدة 1-3 أسابيع، تستهدف تطوير قدراتك التقنية؛ بمنهجيّة تعلُّم نوعية، وبيئة تنافسية قائمة على التطبيقات العملية.</p>
+                        </div>
+                
+
+                <div class="img-type-1">
+                      <button class="type-2"><a href="#">  المزيد</a></button>
+                      
+                      
+                </div>
+
+            </div>
+            <div class="content-type-3">
+                <div class="type-content-1">
+                    <h2> اللقاءات </h2>
+                    
+                </div>
+                        <div class="type-posts-1">
+                            <p class="text-type-1"> لقاءات معرفيّة إثرائية، تقام بالتعاون مع عدة جهات رائدة ومتقدمة؛ لمناقشة مختلف مواضيع التقنيات الحديثة، والتواصل، والأعمال.</p>
+                        </div>
+                
+
+                <div class="img-type-1">
+                      <button class="type-3"><a href="#">  المزيد</a></button>
+                </div>
+            </div> 
+     
+     </section>
+
+      <!-- End  main -->
+
+
+      <!-- start  endsoon -->
+      <section class="main-endsoon">
+
+        <div class="section">
+            <div class="section-header">
+                <h2>ينتهي التسجيل قريبًا</h2>
+              <a href="#">عرض المزيد ←</a>
+            
+            </div>
+          
+            <div class="cards-container">
+             
+              <div class="card-3">
+                <img src="./img/metavers.png" alt="دورة" class="card-img" />
+                <div class="card-content">
+                  <p class="category">علم البيانات والذكاء الاصطناعي</p>
+                  <h3>الذكاء الاصطناعي وتعلم الآلة</h3>
+                  <p class="meta"><span class="camp">معسكر</span> • 5 أسابيع • <span class="status">قريبًا</span></p>
+                  <p class="date"><span class="dot"></span> ينتهي بعد 56 يوم</p>
+                </div>
+              </div>
+              <div class="card-3">
+                <img src="./img/brain.png" alt="دورة" class="card-img" />
+                <div class="card-content">
+                  <p class="category">علم البيانات والذكاء الاصطناعي</p>
+                  <h3>الذكاء الاصطناعي وتعلم الآلة</h3>
+                  <p class="meta"><span class="camp">معسكر</span> • 5 أسابيع • <span class="status">قريبًا</span></p>
+                  <p class="date"><span class="dot"></span> ينتهي بعد 56 يوم</p>
+                </div>
+              </div>
+              <div class="card-3">
+                <img src="./img/metavers.png" alt="دورة" class="card-img" />
+                <div class="card-content">
+                  <p class="category">علم البيانات والذكاء الاصطناعي</p>
+                  <h3>الذكاء الاصطناعي وتعلم الآلة</h3>
+                  <p class="meta"><span class="camp">معسكر</span> • 5 أسابيع • <span class="status">قريبًا</span></p>
+                  <p class="date"><span class="dot"></span> ينتهي بعد 56 يوم</p>
+                </div>
+              </div>
+              <div class="card-3">
+                <img src="./img/develop.png" alt="دورة" class="card-img" />
+                <div class="card-content">
+                  <p class="category">علم البيانات والذكاء الاصطناعي</p>
+                  <h3>الذكاء الاصطناعي وتعلم الآلة</h3>
+                  <p class="meta"><span class="camp">معسكر</span> • 5 أسابيع • <span class="status">قريبًا</span></p>
+                  <p class="date"><span class="dot"></span> ينتهي بعد 56 يوم</p>
+                </div>
+              </div>
+          
+           
+            </div>
+
+          </div>
+          
+      </section>
+
+       <!-- end  endsoon -->
+
+
+
+
+
+
+
+
+
+
+
+
+       <section class="section-2">
+        <div class="section">
+
+      
+        <div class="section-header">
+            <h2> أحدث دورات منصة سطر  </h2>
+          <a href="#"> ابدأ بالتعلم  ←</a>
+        
+        </div>
+        
+        <div class="card-container-2">
+          <!-- البطاقة الأولى -->
+          <div class="card-2-1">
+            <div class="card-img-2">
+              <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="cyber">
+              <span class="badge purple">أحدث المسارات</span>
+            </div>
+            <h3 class="card-title-2">مسار أساسيات الأمن السيبراني</h3>
+            <p class="meta">
+              <span class="level">مبتدئ</span>
+              <span class="subs">2836 مشترك</span>
+              <span class="time green">04:52:21</span>
+            </p>
+            <p class="desc">يهدف المسار إلى تقديم رحلة متكاملة تبدأ بمفاهيم الأمن السيبراني الأساسية...</p>
+          </div>
+    
+          <!-- البطاقة الثانية -->
+          <div class="card-2-1">
+            <div class="card-img-2">
+              <img src="https://cdn-icons-png.flaticon.com/512/3064/3064198.png" alt="network">
+              <span class="badge blue">أحدث الدورات</span>
+            </div>
+            <h3 class="card-title-2">أمن الشبكات 101</h3>
+            <p class="meta">
+              <span class="level">مبتدئ</span>
+              <span class="subs">4650 مشترك</span>
+              <span class="time green">01:19:51</span>
+            </p>
+            <p class="desc">تهدف دورة أمن الشبكات إلى تزويد المتدربين بالمعرفة والمهارات اللازمة لحماية الشبكات...</p>
+          </div>
+    
+          <!-- البطاقة الثالثة -->
+          <div class="card-2-1">
+            <div class="card-img-2">
+              <img src="https://cdn-icons-png.flaticon.com/512/2907/2907390.png" alt="flutter">
+              <span class="badge blue">أحدث الدورات</span>
+            </div>
+            <h3 class="card-title-2">Flutter 103</h3>
+            <p class="meta">
+              <span class="level">متوسط</span>
+              <span class="subs">17994 مشترك</span>
+              <span class="time green">00:56:32</span>
+            </p>
+            <p class="desc">تُعرّف الدورة على كيفية بناء واجهات تفاعلية باستخدام أدوات Flutter المتنوعة...</p>
+          </div>
+        </div>
+
+    </div>
+      </section>
+
+
+
+
+
+      <section class="main-endsoon">
+
+        <div class="section">
+            <div class="section-header">
+                <h2>   أرقام الأكاديمية </h2>
+           
+            
+            </div>
+          
+            <div class="cards-container">
+             
+        
+                <div class="stat-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png" alt="Graduates">
+                    <div class="stat-title">عدد الخريجين</div>
+                    <div class="stat-number">32,016</div>
+                    <div class="stat-note">متدرب حضوري</div>
+                  </div>
+            
+                  <div class="stat-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2920/2920082.png" alt="Programs">
+                    <div class="stat-title">عدد المعسكرات والبرامج</div>
+                    <div class="stat-number">1,836</div>
+                    <div class="stat-note">معسكر وبرنامج</div>
+                  </div>
+            
+                  <div class="stat-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="Partnerships">
+                    <div class="stat-title">شراكة عالمية</div>
+                    <div class="stat-number">+60</div>
+                    <div class="stat-note">شركة</div>
+                  </div>
+            
+              
+            
+                  <div class="stat-card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2906/2906279.png" alt="Satr">
+                    <div class="stat-title">منصة سطر</div>
+                    <div class="stat-number">888,823</div>
+                    <div class="stat-note">متدرب</div>
+                  </div>
+          
+           
+            </div>
+
+          </div>
+          
+      </section>
+
+
+
+
+
+      <div class="news-section">
+        <div class="card" style="background-image: url('./img/imagecopy.png')">
+          <div class="card-content">
+            <p>أكاديمية طويق تختتم معسكراتها الاحترافية بالشراكة مع "Juniper Networks"</p>
+            <div class="date">04/08/2024</div>
+            <div class="arrow">←</div>
+          </div>
+        </div>
+        <div class="card" style="background-image: url('img/imagecopy.png')">
+          <div class="card-content">
+            <p>أكاديمية طويق تطلق معسكرًا احترافيًا في الأمن السيبراني</p>
+            <div class="date">14/08/2024</div>
+            <div class="arrow">←</div>
+          </div>
+        </div>
+        <div class="card" style="background-image: url('img/imagecopy.png')">
+          <div class="card-content">
+            <p>أكاديمية طويق تطلق "مدرسة الموهوبين بالتقنية الثانوية" بالشراكة مع وزارة التعليم</p>
+            <div class="date">19/08/2024</div>
+            <div class="arrow">←</div>
+          </div>
+        </div>
+        <div class="card" style="background-image: url('img/imagecopy.png')">
+          <div class="card-content">
+            <p>أكاديمية طويق تطلق أول ديـام في تطوير الألعاب والعوالم الافتراضية بالشراكة مع "Meta"</p>
+            <div class="date">21/08/2024</div>
+            <div class="arrow">←</div>
+          </div>
+        </div>
+      </div>
+
+<!-- النشرة البريدية -->
+<section class="newsletter">
+    <div class="newsletter-content">
+     
+      <div class="newsletter-form">
+        <h2>اشترك في النشرة البريدية</h2>
+        <div class="inputs">
+          <input type="text" placeholder="الاسم الأول">
+          <input type="text" placeholder="الاسم الأخير">
+          <input type="email" placeholder="name@email.com">
+          <button><span class="material-icons"></span> اشترك الآن</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- الفوتر -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="#">شارك كمدرب</a>
+        <a href="#">سياسة الخصوصية</a>
+        <a href="#">حول الأكاديمية</a>
+        <a href="#">الشروط والأحكام</a>
+      </div>
+  
+      <div class="footer-logo">
+        <img src="./img/logo-h.png" alt="Tuwaiq Academy" width="140">
+      </div>
+    </div>
+  
+    <div class="footer-social">
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733641.png" alt="Discord"></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145812.png" alt="X"></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3670/3670151.png" alt="Snapchat"></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn"></a>
+    </div>
+  
+    <p class="copyright">© 2025 أكاديمية طويق. جميع الحقوق محفوظة.</p>
+  </footer>
+
 </body>
 
 </html>
