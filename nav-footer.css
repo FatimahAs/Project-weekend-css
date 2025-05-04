@@ -1,0 +1,244 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+/**** Start Top Navbar Style  ****/
+
+.topNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #e3d9fe74;
+}
+
+.topNav img {
+  width: 11%;
+}
+
+.topNav .language {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #4f31b4;
+  cursor: pointer;
+}
+
+.topNav .signin {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #4f31b4;
+  border: 1px solid #e3d9fe;
+  cursor: pointer;
+}
+
+.topNav .language:hover {
+  border: 1px solid #e3d9fe;
+}
+
+.topNav .signin:hover {
+  background-color: #e3d9fe;
+}
+
+.topNav .language a {
+  text-decoration: none;
+  color: #4f31b4;
+}
+
+.topNav .signin a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.topNav .signin a:hover {
+  text-decoration: none;
+  color: #4f31b4;
+}
+
+.topNav .language a:hover {
+  text-decoration: none;
+  color: #e3d9fe;
+}
+
+/**** End Top Navbar Style  ****/
+
+/**** Start  Navbar Style  ****/
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  width: 60%;
+}
+
+.bg-list {
+  background-color: #e3d9fe55;
+  height: 2.5em;
+  border-radius: 0 0 10px 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+li a:hover {
+  color: #4f31b4;
+}
+
+/**** End  Navbar Style  ****/
+
+.footer {
+  background-color: #e5dafe;
+  padding: 2rem;
+  border-radius: 20px 20px 0 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-logo img {
+  width: 140px;
+}
+
+.footer-social {
+  margin: 1rem 0;
+}
+
+.footer-social a img {
+  width: 30px;
+  margin: 0 5px;
+}
+
+.footer p {
+  font-size: 13px;
+  color: #666;
+  margin-top: 1rem;
+}
+
+/* زر الهامبرغر */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* إخفاء الـ checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .bg-list {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .auth-buttons {
+    flex-direction: column;
+    margin-top: 15px;
+    width: 100%;
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  #menu-toggle:checked + .hamburger + nav.menu {
+    display: flex;
+  }
+
+  .topNav {
+    position: relative;
+  }
+  .topNav img {
+    width: 25%;
+  }
+
+  .container {
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .start-posts {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5%;
+  }
+
+  .container-main {
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .holberton-posts {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card-container-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 72%;
+  }
+
+  .section-header a {
+    display: none;
+  }
+  .section-header h2 {
+    font-size: rem;
+    color: #333;
+  }
+}
